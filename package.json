@@ -1,0 +1,9 @@
+{
+  "name": "nesh-computer-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NESH Computer Services website with WhatsApp booking notifications (Vercel)",
+  "engines": {
+    "node": "22.x"
+  }
+}

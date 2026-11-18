@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booking Job | NESH Computer Services</title>
+<meta name="description" content="Request a computer or laptop service with NESH Computer Services. Choose your service, preferred date and time, and we will contact you to confirm.">
+<meta name="theme-color" content="#061b3b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book a Service | NESH Computer Services">
+<meta property="og:description" content="Request an appointment for computer repair, upgrades or on-site IT support.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><div class="container"><span>Professional Computer &amp; Laptop Services</span><span>Serving Kuala Lumpur &amp; Selangor · Home · Office · On-site</span></div></div>
+<header class="header"><div class="container nav">
+<a class="brand" href="index.html" aria-label="NESH Computer Services — home"><img src="nesh-mark.png" alt="" width="54" height="54"><span class="brand-text"><span class="brand-name">NESH</span><span class="brand-sub">Computer Services</span></span></a>
+<button class="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><svg class="i" aria-hidden="true"><use href="icons.svg#menu"/></svg></button>
+<nav class="navlinks" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="work.html">Our Work</a><a class="active" href="booking.html" aria-current="page">Booking Job</a><a href="contact.html">Contact</a></nav>
+<a class="nav-cta" href="booking.html">Book a Service <svg class="i" aria-hidden="true"><use href="icons.svg#arrow"/></svg></a>
+</div></header>
+
+<main id="main">
+<section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a> / Booking Job</div><span class="eyebrow">Appointment request</span><h1>Book a computer service.</h1><p>Tell us what you need and choose your preferred date and time. NESH will receive your request and contact you to confirm.</p></div></section>
+
+<section class="section"><div class="container form-wrap">
+<aside class="info-panel">
+<h2>How booking works</h2>
+<p>Submit the form here. NESH will receive a WhatsApp notification and reply to confirm availability and discuss the job.</p>
+<ul class="feature-list">
+<li><svg class="i" aria-hidden="true"><use href="icons.svg#check"/></svg>Choose your required service</li>
+<li><svg class="i" aria-hidden="true"><use href="icons.svg#check"/></svg>Pick a preferred date and time slot</li>
+<li><svg class="i" aria-hidden="true"><use href="icons.svg#check"/></svg>Share your location and issue</li>
+<li><svg class="i" aria-hidden="true"><use href="icons.svg#check"/></svg>Wait for NESH to confirm your appointment</li>
+</ul>
+<p><strong>Service area</strong><br>Kuala Lumpur &amp; Selangor</p>
+<p><strong>WhatsApp</strong><br>011-30842771</p>
+</aside>
+
+<div class="form-card">
+<h2>Job booking details</h2>
+<form id="booking-form">
+<div class="form-grid">
+<div class="field"><label for="name">Full name *</label><input id="name" name="name" maxlength="80" required autocomplete="name" placeholder="Your name"></div>
+<div class="field"><label for="phone">Contact number *</label><input id="phone" name="phone" type="tel" inputmode="tel" maxlength="30" required autocomplete="tel" placeholder="e.g. 012-3456789"></div>
+<div class="field"><label for="service">Service required *</label>
+<select id="service" name="service" required>
+<option value="">Select a service</option>
+<option>Computer / Laptop Repair</option>
+<option>HDD to SSD Data Transfer</option>
+<option>SSD / RAM Upgrade</option>
+<option>Windows / Software Installation</option>
+<option>Virus / Malware Removal</option>
+<option>PC Cleaning / Maintenance</option>
+<option>Wi-Fi / Network Setup</option>
+<option>Printer Setup</option>
+<option>Data Backup / Recovery</option>
+<option>Custom PC Build</option>
+<option>On-site IT Support</option>
+<option>Other / Not sure</option>
+</select></div>
+<div class="field"><label for="device">Device type</label>
+<select id="device" name="device">
+<option value="">Select device</option>
+<option>Laptop</option>
+<option>Desktop PC</option>
+<option>Printer / Network</option>
+<option>Other</option>
+</select></div>
+<div class="field"><label for="booking-date">Preferred date *</label><input id="booking-date" name="date" type="date" required></div>
+<div class="field"><label for="slot">Preferred time slot *</label>
+<select id="slot" name="slot" required>
+<option value="">Choose a time</option>
+<option>9:00 AM – 11:00 AM</option>
+<option>11:00 AM – 1:00 PM</option>
+<option>1:00 PM – 3:00 PM</option>
+<option>3:00 PM – 5:00 PM</option>
+<option>5:00 PM – 7:00 PM</option>
+</select></div>
+<div class="field full"><label for="location">Service location / area *</label><input id="location" name="location" maxlength="100" required placeholder="e.g. Shah Alam, Selangor"></div>
+<div class="field full"><label for="details">Describe the problem / job details</label><textarea id="details" name="details" maxlength="300" placeholder="Tell us the device model, problem, or any details that may help."></textarea></div>
+<div class="hp" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+<div class="field full">
+<button class="btn" type="submit">Submit booking request</button>
+<p class="hint">This is an appointment request, not an instant confirmed booking. NESH will contact you to confirm the available slot. Please do not include passwords or banking details.</p>
+<p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+<div class="fallback" id="wa-fallback"><a class="btn whatsapp" href="https://wa.me/601130842771" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="icons.svg#chat"/></svg> Send via WhatsApp instead</a></div>
+</div>
+</div>
+</form>
+</div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer-grid">
+<div><img class="footer-logo" src="nesh-logo.webp" alt="NESH Computer Services" width="150" height="161" loading="lazy"><p>Reliable solutions. Better performance.<br>We fix. We upgrade. We care.</p></div>
+<div><h3>Quick links</h3><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="work.html">Our Work</a><a href="booking.html">Book a Job</a><a href="contact.html">Contact</a></div></div>
+<div><h3>Contact NESH</h3><div class="footer-links"><a href="https://wa.me/601130842771" target="_blank" rel="noopener">WhatsApp: 011-30842771</a><a href="mailto:computerservicesnesh@gmail.com">computerservicesnesh@gmail.com</a><a href="https://www.tiktok.com/@neshcomputerservices" target="_blank" rel="noopener">TikTok: @neshcomputerservices</a><a href="https://www.instagram.com/neshcomputers" target="_blank" rel="noopener">Instagram: @neshcomputers</a><span>Kuala Lumpur &amp; Selangor</span></div></div>
+</div><div class="copyright">© <span id="year">2026</span> NESH Computer Services. All rights reserved.</div></div></footer>
+<a class="whatsapp-float" href="https://wa.me/601130842771?text=Hi%20NESH%20Computer%20Services" target="_blank" rel="noopener" aria-label="Chat with NESH on WhatsApp"><svg class="i" aria-hidden="true"><use href="icons.svg#chat"/></svg> WhatsApp</a>
+<script src="script.js" defer></script>
+</body>
+</html>
